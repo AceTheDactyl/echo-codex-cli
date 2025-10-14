@@ -6,8 +6,8 @@
 - State is shared with the Python repo under `vessel_narrative_system_final/state/`.
 
 ## Build, Test, and Development Commands
-- Run CLI directly: `node tools/codex-cli/bin/codex.js --help`
-- Optional link: `(cd tools/codex-cli && npm link)` then `codex ...`
+- Run CLI directly (from `vessel_narrative_system_final/`): `node tools/codex-cli/bin/codex.js --help`
+- Optional link: `(cd vessel_narrative_system_final/tools/codex-cli && npm link)` then `codex ...`
 - Examples:
   - `codex echo mode paradox`
   - `codex limnus state`
@@ -31,5 +31,5 @@
 ## Security & Configuration Tips
 - Node 20+ required. No secrets in code or logs.
 - Stego: PNG‑24/32 only; never JPEG/palette PNG. Bit order MSB‑first; RGB channels only.
-- Python bridge expects Echo‑Community‑Toolkit under repo root; verify with the golden sample CRC (6E3FD9B7).
+- Python bridge expects Echo‑Community‑Toolkit at `vessel_narrative_system_final/Echo-Community-Toolkit`; verify golden CRC (6E3FD9B7).
 
